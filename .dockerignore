@@ -1,0 +1,13 @@
+config/master.key
+spec/examples.txt
+.env
+.env.sample
+.DS_Store
+.git
+.gitignore
+log/*
+tmp/*
+coverage/
+spec/tmp
+.ruby-version
+.ruby-gemset

@@ -1,0 +1,9 @@
+# https://help.github.com/articles/ignoring-files
+/.bundle
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+spec/examples.txt
+.byebug_history
+/config/master.key
