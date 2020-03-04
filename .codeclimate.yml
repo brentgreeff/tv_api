@@ -3,10 +3,10 @@ plugins:
   rubocop:
     enabled: true
     channel: "rubocop-0-79"
-    Documentation:
-      Enabled: false
     checks:
-      Metrics/LineLength:
+      Rubocop/Style/Documentation:
+        Enabled: false
+      Rubocop/Metrics/LineLength:
         Max: 80
         IgnoredPatterns: ['^(\s+)?#']
 exclude_patterns:
