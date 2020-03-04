@@ -5,7 +5,7 @@ plugins:
     channel: "rubocop-0-74"
     checks:
       Rubocop/Style/Documentation:
-        Enabled: false
+        enabled: false
       Rubocop/Layout/LineLength:
         Max: 80
         IgnoredPatterns: ['^(\s+)?#']
