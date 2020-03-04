@@ -6,6 +6,10 @@ plugins:
     checks:
       Rubocop/Style/Documentation:
         enabled: false
+      Rubocop/Style/SymbolArray:
+        enabled: false
+      Rubocop/Style/StringLiterals:
+        enabled: false
       Rubocop/Layout/LineLength:
         Max: 80
         IgnoredPatterns: ['^(\s+)?#']
