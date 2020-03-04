@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  resources :users
   # https://guides.rubyonrails.org/routing.html
 
-  get 'welcome', to: 'welcome#index'
+  resources :movies, only: [:index]
 end

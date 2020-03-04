@@ -14,8 +14,6 @@
 #
 # and, you'll have to watch "config/Guardfile" instead of "Guardfile"
 
-# Note: The cmd option is now required due to the increasing number of ways
-#       rspec may be run, below are examples of the most common uses.
 #  * bundler: 'bundle exec rspec'
 #  * bundler binstubs: 'bin/rspec'
 #  * spring: 'bin/rspec' (This will use spring if running and you have
@@ -29,6 +27,10 @@ guard :rspec, cmd: "bundle exec rspec" do
 
   clearing :on
 
+  watch(%r{^app\/controllers\/(.+)_controller\.rb}) do |m|
+    "spec/requests/#{m[1]}_spec.rb"
+  end
+
   # RSpec files
   rspec = dsl.rspec
   watch(rspec.spec_helper) { rspec.spec_dir }
@@ -40,18 +42,9 @@ guard :rspec, cmd: "bundle exec rspec" do
   dsl.watch_spec_files_for(ruby.lib_files)
 
   # Rails files
-  rails = dsl.rails(view_extensions: %w(erb haml slim))
+  rails = dsl.rails
   dsl.watch_spec_files_for(rails.app_files)
-  dsl.watch_spec_files_for(rails.views)
-
-  watch(rails.controllers) do |m|
-    [
-      rspec.spec.call("routing/#{m[1]}_routing"),
-    ]
-  end
 
   # Rails config changes
-  watch(rails.spec_helper)     { rspec.spec_dir }
-  watch(rails.routes)          { "#{rspec.spec_dir}/routing" }
-  watch(rails.app_controller)  { "#{rspec.spec_dir}/controllers" }
+  watch(rails.spec_helper) { rspec.spec_dir }
 end

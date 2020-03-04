@@ -22,6 +22,12 @@ module App
   class Application < Rails::Application
     config.load_defaults 6.0
 
+    console { ActiveRecord::Base.connection }
+
+    config.generators do |g|
+      g.factory_bot suffix: "factory"
+    end
+
     config.api_only = true
   end
 end
