@@ -8,10 +8,10 @@ plugins:
     checks:
       Metrics/LineLength:
         Max: 80
-        IgnoredPatterns: ['(\A|\s)#']
+        IgnoredPatterns: ['^(\s+)?#']
 exclude_patterns:
   - "db/schema.rb"
   - "Rakefile"
   - "bin/"
-  - "config/environments/"
+  - "config/"
   - "!spec/support/helpers"
