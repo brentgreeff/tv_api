@@ -43,7 +43,7 @@ Supporting multiple versions indefinitely can be difficult & potentially unneces
 I initially considered Roda because of its performance profile, but Hanami looks even more appealing especially for an API - http://hanamirb.org/blog/2020/02/26/introducing-hanami-api.html
 
 #### serialization
-I spent quite a bit of time thinking about serializers. AMS is easy to use, but slow, and the future of that project is uncertain. I have also used fast_jsonapi - which is a questionable choice for this exercise. I looked through all the open-source Rakuten github repos - nothing API related it seems. jsonapi-rb has good performance & low memory usage but follows the JSON:API spec. There could be some reasons not to follow that spec: https://apisyouwonthate.com/blog/lets-stop-building-apis-around-a-network-hack
+I spent quite a bit of time thinking about serializers. AMS is easy to use, but slow, and the future of that project is uncertain. I have also used fast_jsonapi - which is a questionable choice for this exercise. I looked through all the open-source github repos for "the company" - nothing API related it seems. jsonapi-rb has good performance & low memory usage but follows the JSON:API spec. There could be some reasons not to follow that spec: https://apisyouwonthate.com/blog/lets-stop-building-apis-around-a-network-hack
 
 #### Database
 ROM is very interesting - https://rom-rb.org/blog/rom-5-0-and-rom-sql-3-0-released/ - could have performance advantages, but looks experimental still.
