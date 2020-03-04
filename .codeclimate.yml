@@ -6,7 +6,7 @@ plugins:
     checks:
       Rubocop/Style/Documentation:
         Enabled: false
-      Rubocop/Metrics/LineLength:
+      Rubocop/Layout/LineLength:
         Max: 80
         IgnoredPatterns: ['^(\s+)?#']
 exclude_patterns:
