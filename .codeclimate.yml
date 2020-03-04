@@ -3,3 +3,13 @@ plugins:
   rubocop:
     enabled: true
     channel: "rubocop-0-79"
+    Documentation:
+      Enabled: false
+    checks:
+      Metrics/LineLength:
+        Max: 80
+        IgnoredPatterns: ['\A#']
+exclude_patterns:
+  - "Rakefile"
+  - "bin/"
+  - "!spec/support/helpers"

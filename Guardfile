@@ -1,3 +1,5 @@
+# frozen_string_literal: true.
+
 # https://github.com/guard/guard#readme
 
 ## Uncomment and set this to only include directories you want to watch
