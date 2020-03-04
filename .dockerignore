@@ -11,3 +11,4 @@ coverage/
 spec/tmp
 .ruby-version
 .ruby-gemset
+.semaphore-cache
