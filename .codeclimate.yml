@@ -12,6 +12,7 @@ plugins:
 exclude_patterns:
   - "db/schema.rb"
   - "Rakefile"
+  - "db/migrate/"
   - "bin/"
   - "config/"
   - "!spec/support/helpers"
