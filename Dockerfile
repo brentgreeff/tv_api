@@ -6,7 +6,7 @@ RUN apt-get update -yqq && apt-get install -yqq vim
 
 COPY Gemfile* /usr/src/app/
 WORKDIR /usr/src/app
-RUN bundle install --quiet
+RUN bundle install
 
 COPY . /usr/src/app/
 
