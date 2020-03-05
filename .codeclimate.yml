@@ -2,21 +2,21 @@ version: "2"
 plugins:
   rubocop:
     enabled: true
-    channel: "rubocop-0-74"
-    checks:
-      Rubocop/Style/Documentation:
-        enabled: false
-      Rubocop/Style/SymbolArray:
-        enabled: false
-      Rubocop/Style/StringLiterals:
-        enabled: false
-      Rubocop/Layout/LineLength:
-        Max: 80
-        IgnoredPatterns: ['^(\s+)?#']
+    channel: "rubocop-0-79"
+    # checks:
+    #   Rubocop/Style/Documentation:
+    #     enabled: false
+    #   Rubocop/Style/SymbolArray:
+    #     enabled: false
+    #   Rubocop/Style/StringLiterals:
+    #     enabled: false
+    #   Rubocop/Layout/LineLength:
+    #     Max: 80
+    #     IgnoredPatterns: ['^(\s+)?#']
 exclude_patterns:
-  - "db/schema.rb"
+  # - "db/schema.rb"
   - "Rakefile"
-  - "db/migrate/"
-  - "bin/"
-  - "config/"
+  # - "db/migrate/"
+  # - "bin/"
+  # - "config/"
   - "!spec/support/helpers"

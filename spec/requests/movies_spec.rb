@@ -1,7 +1,7 @@
+# frozen_string_literal: true
+
 RSpec.describe "Movies" do
-
   describe "GET /movies" do
-
     it "returns OK" do
       get movies_path
       expect(response).to have_http_status(200)
