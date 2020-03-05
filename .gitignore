@@ -7,3 +7,4 @@
 spec/examples.txt
 .byebug_history
 /config/master.key
+/coverage/*

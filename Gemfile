@@ -22,6 +22,7 @@ end
 
 group :test do
   gem 'jsonapi-rspec'
+  gem 'simplecov', require: false
 end
 
 group :development do

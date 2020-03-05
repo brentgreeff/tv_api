@@ -24,6 +24,8 @@ password: root
 
 Press [Enter] - to run all tests.
 
+SimpleCov is installed.
+
 As is the recommendation by the Rails core team & the RSpec team I am writing request specs since they exercise the whole stack. Guard is configured to run the corresponding request_spec when the controller is saved.
 
 ## Architectural considerations
