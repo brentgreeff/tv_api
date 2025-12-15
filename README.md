@@ -1,7 +1,5 @@
-> [\!CAUTION]
-> This repository is deprecated and no longer maintained.
-
-# TV API
+> [!CAUTION]
+> This repository is deprecated and no longer maintained.# TV API
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/84fbf16dd2a019ec6a1c/maintainability)](https://codeclimate.com/github/brentgreeff/tv_api/maintainability)
 
